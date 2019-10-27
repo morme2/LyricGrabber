@@ -2,20 +2,21 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+    <title>Lyric Grabber</title>
 </head>
 
 <body>
     <div id="page-container">
         <div id="content-wrap">
-            <h1>Welcome to the Lyric Grabber!</h1>
+            <h1 id="topTitle">Welcome to the Lyric Grabber!</h1>
 
             <div id="app">
-                <h2>Please enter an artist and song title below</h2>
+                <h2>Please enter an artist and song title below.</h2>
                 Artist: <input type="text" v-model="artist">
                 <br> Title: <input type="text" v-model="title">
                 <br>
                 <button v-on:click="getLyrics">Get Lyrics</button>
-                <p>{{lyrics}}</p>
+                <p><pre>{{lyrics}}</pre></p>
 
             </div>
 

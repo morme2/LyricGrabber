@@ -15,6 +15,7 @@ let app = new Vue({
             console.log(response);
             }catch(error){
                 console.log(error);
+                this.lyrics = "404-Song not found";
             }
         }
     },
