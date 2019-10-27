@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <h1>Welcome to the Lyric Grabber!</h1>
+
+            <div id="app">
+                <h2>Please enter an artist and song title below</h2>
+                Artist: <input type="text" v-model="artist">
+                <br> Title: <input type="text" v-model="title">
+                <br>
+                <button v-on:click="getLyrics">Get Lyrics</button>
+                <p>{{lyrics}}</p>
+
+            </div>
+
+        </div>
+        <footer>
+            <a href="https://github.com/morme2/LyricGrabber">GitHub Link</a>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script text="type/javascript" src="script.js"></script>
+</body>
+
+</html>
